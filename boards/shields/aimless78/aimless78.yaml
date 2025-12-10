@@ -1,9 +1,0 @@
-# aimless78.yaml
-shield:
-name: aimless78
-friendly_name: "Aimless78"
-board: nice_nano_v2
-
-build:
-board: nice_nano_v2
-shield: aimless78
