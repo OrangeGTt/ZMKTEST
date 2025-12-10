@@ -1,4 +1,4 @@
-/* right.overlay: kscan for RIGHT half (7 rows x 7 cols) */
+/* left.overlay: kscan for LEFT half (7 rows x 7 cols) */
 / {
     fragment@0 {
         target = <&kscan>;
@@ -8,29 +8,28 @@
             #size-cells = <1>;
 
             rows = <7>;
-            cols = <8>;
+            cols = <7>;
 
             /* Row GPIOs (row0..row6) */
             row-gpios = <
+                &gpio0 4 GPIO_ACTIVE_LOW
                 &gpio0 5 GPIO_ACTIVE_LOW
                 &gpio0 6 GPIO_ACTIVE_LOW
                 &gpio0 7 GPIO_ACTIVE_LOW
                 &gpio0 8 GPIO_ACTIVE_LOW
                 &gpio0 9 GPIO_ACTIVE_LOW
-                &gpio0 0 GPIO_ACTIVE_LOW
-                &gpio0 4 GPIO_ACTIVE_LOW
+                &gpio0 21 GPIO_ACTIVE_LOW
             >;
 
-            /* Column GPIOs (col0..col7) */
+            /* Column GPIOs (col0..col6) */
             col-gpios = <
-                &gpio0 21 GPIO_ACTIVE_LOW
-                &gpio0 20 GPIO_ACTIVE_LOW
-                &gpio0 19 GPIO_ACTIVE_LOW
-                &gpio0 18 GPIO_ACTIVE_LOW
-                &gpio0 15 GPIO_ACTIVE_LOW
-                &gpio0 14 GPIO_ACTIVE_LOW
-                &gpio0 16 GPIO_ACTIVE_LOW
                 &gpio0 10 GPIO_ACTIVE_LOW
+                &gpio0 16 GPIO_ACTIVE_LOW
+                &gpio0 14 GPIO_ACTIVE_LOW
+                &gpio0 15 GPIO_ACTIVE_LOW
+                &gpio0 18 GPIO_ACTIVE_LOW
+                &gpio0 19 GPIO_ACTIVE_LOW
+                &gpio0 20 GPIO_ACTIVE_LOW
             >;
         };
     };
