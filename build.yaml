@@ -1,3 +1,5 @@
 include:
   - board: nice_nano_v2
-    shield: aimless78
+    shield: aimless78_left
+  - board: nice_nano_v2
+    shield: aimless78_right
