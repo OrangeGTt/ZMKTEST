@@ -65,6 +65,5 @@
         multiplex-ratio = <31>;
         segment-offset = <0>;
         prechargep = <0x22>;
-        rotate-90;
     };
 };
